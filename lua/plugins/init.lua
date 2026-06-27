@@ -1,4 +1,5 @@
 require("plugins.lsp")
+require("plugins.blink")
 require("plugins.treesitter")
 require("plugins.snacks")
 require("plugins.mini")
