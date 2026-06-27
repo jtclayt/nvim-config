@@ -1,0 +1,8 @@
+require("plugins.lsp")
+require("plugins.treesitter")
+require("plugins.snacks")
+require("plugins.mini")
+require("plugins.conform")
+require("plugins.which-key")
+require("plugins.colorscheme")
+require("plugins.bufferline")
