@@ -18,6 +18,10 @@ snacks.setup({
 	picker = {
 		enabled = true,
 		sources = {
+			smart = {
+				hidden = false,
+				ignored = false,
+			},
 			files = {
 				hidden = false,
 				ignored = false,
@@ -61,12 +65,12 @@ snacks.setup({
 				},
 			},
 			grep_buffers = {
-        hidden = false,
-        ignored = false,
-      },
+				hidden = false,
+				ignored = false,
+			},
 			explorer = {
 				hidden = true,
-        ignored = true,
+				ignored = true,
 				supports_live = true,
 				auto_close = true,
 				focus = "list",
@@ -430,12 +434,20 @@ local keys = {
 		end,
 		desc = "C[a]lls Outgoing",
 	},
-  { "<leader>ss", function() snacks.picker.lsp_symbols() end, desc = "LSP Symbols" },
-  {
-    "<leader>sS",
-    function() snacks.picker.lsp_workspace_symbols() end,
-    desc = "LSP Workspace Symbols",
-  },
+	{
+		"<leader>ss",
+		function()
+			snacks.picker.lsp_symbols()
+		end,
+		desc = "LSP Symbols",
+	},
+	{
+		"<leader>sS",
+		function()
+			snacks.picker.lsp_workspace_symbols()
+		end,
+		desc = "LSP Workspace Symbols",
+	},
 	-- Buffers
 	{
 		"<leader>bb",

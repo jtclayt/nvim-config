@@ -54,6 +54,16 @@ require("obsidian").setup({
 	ui = {
 		bullets = {
 			enable = false,
+			char = "•",
+			hl_group = "ObsidianBullet",
 		},
 	},
 })
+
+vim.keymap.set({ "n" }, "<leader>of", ":Obsidian follow_link<CR>", { desc = "Follow link" })
+vim.keymap.set({ "n", "v", "x" }, "<leader>os", ":Obsidian search<CR>", { desc = "Search" })
+vim.keymap.set({ "n" }, "<leader>ol", ":Obsidian backlinks<CR>", { desc = "List backlinks" })
+vim.keymap.set({ "n" }, "<leader>ot", ":Obsidian tags<CR>", { desc = "List tags" })
+vim.keymap.set({ "v", "x" }, "<leader>oe", ":Obsidian extract_note<CR>", { desc = "Extract note" })
+vim.keymap.set({ "n" }, "<leader>on", ":Obsidian template note.md<CR>", { desc = "Apply note template" })
+vim.keymap.set({ "n" }, "<leader>ob", ":Obsidian template book.md<CR>", { desc = "Apply book template" })
