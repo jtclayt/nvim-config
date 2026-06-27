@@ -59,7 +59,7 @@ vim.api.nvim_create_autocmd("LspAttach", {
 local servers = {
 	-- clangd = {},
 	-- gopls = {},
-	-- pyright = {},
+	pyright = {},
 	-- rust_analyzer = {},
 	--
 	-- Some languages (like typescript) have entire language plugins that can be useful:
@@ -70,6 +70,8 @@ local servers = {
 
 	stylua = {}, -- Used to format Lua code
 	marksman = {},
+	yamlls = {},
+	jsonls = {},
 
 	-- Special Lua Config, as recommended by neovim help docs
 	lua_ls = {

@@ -6,3 +6,10 @@ require("plugins.conform")
 require("plugins.which-key")
 require("plugins.colorscheme")
 require("plugins.bufferline")
+require("plugins.autopairs")
+require("plugins.todo")
+
+if vim.g.enable_markdown then
+	require("plugins.render-markdown")
+	require("plugins.obsidian")
+end
