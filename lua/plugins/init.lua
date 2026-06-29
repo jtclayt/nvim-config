@@ -12,5 +12,8 @@ require("plugins.todo")
 
 if vim.g.enable_markdown then
 	require("plugins.render-markdown")
+end
+
+if vim.g.enable_obsidian then
 	require("plugins.obsidian")
 end
