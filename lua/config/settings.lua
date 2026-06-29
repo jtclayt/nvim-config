@@ -1,7 +1,7 @@
 -- Globals
 vim.g.have_nerd_font = true
 vim.g.enable_markdown = true
-vim.g.enable_obsidian = true
+vim.g.enable_obsidian = false
 
 -- Basic settings
 vim.opt.number = true -- Line numbers
