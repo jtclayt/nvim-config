@@ -72,6 +72,7 @@ local servers = {
 	marksman = {},
 	yamlls = {},
 	jsonls = {},
+	ols = {},
 
 	-- Special Lua Config, as recommended by neovim help docs
 	lua_ls = {

@@ -18,12 +18,12 @@ blink.setup({
 		preset = "default",
 		["<C-u>"] = { "scroll_signature_up", "fallback" },
 		["<C-d>"] = { "scroll_signature_down", "fallback" },
-		["<C-s>"] = { "show_signature", "hide_signature", "fallback" },
+		["<C-k>"] = { "show_signature", "hide_signature", "fallback" },
 	},
 	appearance = { nerd_font_variant = "mono" },
 	completion = {
 		documentation = {
-			auto_show = false,
+			auto_show = true,
 			auto_show_delay_ms = 500,
 		},
 	},
@@ -34,5 +34,3 @@ blink.setup({
 	fuzzy = { implementation = "lua" },
 	signature = { enabled = true },
 })
-
-vim.keymap.set({ "n" }, "<C-s>", blink.show_signature, { desc = "Show signature" })
